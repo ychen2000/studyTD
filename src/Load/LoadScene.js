@@ -52,7 +52,9 @@ var LoadMainLayer = cc.Layer.extend({
         var percent = this.loadIndex / this.loadNumber * 100;
         this.loadBar.setPercentage(percent);
         if(this.loadIndex==this.loadNumber){
-            cc.log('load succes!');
+            //cc.log('load succes!');
+            cc.audioEngine.playMusic(res.music_mp3,true);
+            cc.director.runScene(new MainMenuScene());
         }
     },
     loadProgressBar : function () {

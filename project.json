@@ -14,6 +14,7 @@
         "src/resource.js",
         "src/appConfig.js",
         "src/Load/LoadScene.js",
+        "src/MainMenu/MainMenuScene.js",
 
 
         "src/app.js"
